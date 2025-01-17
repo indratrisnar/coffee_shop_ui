@@ -1,7 +1,5 @@
 import 'package:coffee_shop_ui/models/coffee.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:intl/intl.dart';
 
@@ -41,7 +39,7 @@ class _HomeFragmentState extends State<HomeFragment> {
         buildCategories(),
         const Gap(16),
         buildGridCoffee(),
-        Gap(30),
+        const Gap(30),
       ],
     );
   }
@@ -201,7 +199,7 @@ class _HomeFragmentState extends State<HomeFragment> {
               decoration: BoxDecoration(
                 color: isActive
                     ? const Color(0xffC67C4E)
-                    : const Color(0xffEDEDED).withOpacity(0.35),
+                    : const Color(0xffEDEDED).withValues(alpha: 0.35),
                 borderRadius: BorderRadius.circular(6),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -268,8 +266,8 @@ class _HomeFragmentState extends State<HomeFragment> {
                             begin: Alignment.topRight,
                             end: Alignment.bottomLeft,
                             colors: [
-                              const Color(0xff111111).withOpacity(0.3),
-                              const Color(0xff313131).withOpacity(0.3),
+                              const Color(0xff111111).withValues(alpha: 0.3),
+                              const Color(0xff313131).withValues(alpha: 0.3),
                             ],
                           ),
                           borderRadius: const BorderRadius.only(

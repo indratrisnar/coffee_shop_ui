@@ -149,7 +149,7 @@ class _DetailPageState extends State<DetailPage> {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: const Color(0xffEDEDED).withOpacity(0.35),
+                    color: const Color(0xffEDEDED).withValues(alpha: 0.35),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   alignment: Alignment.center,
